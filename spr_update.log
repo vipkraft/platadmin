@@ -1,0 +1,1140 @@
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  09:18:39  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника ДОВОГОВОР...
+===================================================================
+ОШИБКА  ЗАПРОСА !!!Select a.kodkont,a.kod1c FROM av_1c_kontr_dog AS a 
+WHERE EXISTS (SELECT distinct b.kodkont,b.kod1c FROM av_spr_kontr_dog AS b WHERE b.kodkont=a.kodkont AND b.kod1c=a.kod1c AND b.del=0) AND NOT EXISTS (SELECT distinct b.kodkont,b.kod1c FROM av_spr_kontr_dog AS b WHERE b.kodkont=a.kodkont AND b.kod1c=a.kod1c AND b.del=0 AND coalesce(a.datapog,'1.1.1970')=coalesce(b.datapog,'1.1.1970') AND coalesce(a.datazak,'1.1.1970')=coalesce(b.datazak,'1.1.1970') AND coalesce(a.datavoz,'1.1.1970')=coalesce(b.datavoz,'1.1.1970') AND coalesce(a.datanacsh,'1.1.1970')=coalesce(b.datanacsh,'1.1.1970') AND coalesce(a.dataprsh,'1.1.1970')=coalesce(b.dataprsh,'1.1.1970') AND a.name=b.name AND a.stav=b.stav AND a.val=b.val AND a.viddog=b.viddog AND a.podr=b.podr AND a.otcblm=b.otcblm AND a.otcbagm=b.otcbagm AND a.otcblp=b.otcblp AND a.otcbagp=b.otcbagp AND a.otcblr=b.otcblr AND a.otcbagr=b.otcbagr AND a.otcblg=b.otcblg AND a.otcbagg=b.otcbagg AND a.komotd=b.komotd AND a.med=b.med AND a.ubor=b.ubor AND a.stop=b.stop AND a.disp=b.disp AND a.voin=b.voin AND a.lgot=b.lgot AND a.dopus=b.dopus AND a.vidar=b.vidar AND a.sumar=b.sumar AND a.shtr1=b.shtr1 AND a.shtr2=b.shtr2 AND a.shtr11=b.shtr11 AND a.shtr12=b.shtr12 AND a.shtr13=b.shtr13 AND a.shtr21=b.shtr21 AND a.shtr22=b.shtr22 AND a.shtr23=b.shtr23 AND a.shtr24=b.shtr24 AND a.shtr42=b.shtr42 AND a.shtr43=b.shtr43 AND a.shtr44=b.shtr44 AND a.shtr45=b.shtr45 AND a.shtr3=b.shtr3 AND a.shtr4=b.shtr4 AND a.shtr41=b.shtr41 AND a.shtr5=b.shtr5 AND a.shtr6=b.shtr6 AND a.shtr7=b.shtr7 AND a.shtr8=b.shtr8 AND btrim(a.edizm1)=btrim(b.edizm1) AND btrim(a.edizm11)=btrim(b.edizm11) AND btrim(a.edizm2)=btrim(b.edizm2) AND btrim(a.edizm3)=btrim(b.edizm3) AND btrim(a.edizm4)=btrim(b.edizm4) AND btrim(a.edizm41)=btrim(b.edizm41) AND btrim(a.edizm5)=btrim(b.edizm5) AND btrim(a.edizm6)=btrim(b.edizm6) AND btrim(a.edizm7)=btrim(b.edizm7) AND btrim(a.edizm8)=btrim(b.edizm8) AND btrim(a.edizm12)=btrim(b.edizm12) AND btrim(a.edizm13)=btrim(b.edizm13) AND btrim(a.edizm21)=btrim(b.edizm21) AND btrim(a.edizm22)=btrim(b.edizm22) AND btrim(a.edizm23)=btrim(b.edizm23) AND btrim(a.edizm24)=btrim(b.edizm24) AND btrim(a.edizm42)=btrim(b.edizm42) AND btrim(a.edizm43)=btrim(b.edizm43) AND btrim(a.edizm44)=btrim(b.edizm44) AND btrim(a.edizm45)=btrim(b.edizm45)) and a.datapog>current_date and kodkont in (select distinct kod1c from av_spr_kontragent where del=0); 
+
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  13:46:59  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление  
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:00:14  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника ДОВОГОВОР...
+===================================================================
+Данные не записаны !Не удается завершить транзакцию !!!Запрос SQL: CREATE LOCAL UNLOGGED TABLE tmp1Dog200713_1600024 (id integer NOT NULL DEFAULT 0,id_kontr integer NOT NULL DEFAULT 0,del smallint NOT NULL DEFAULT 0, createdate timestamp without time zone NOT NULL DEFAULT now(),
+id_user integer NOT NULL DEFAULT 0, createdate_first timestamp without time zone,id_user_first integer,
+kodkont integer NOT NULL DEFAULT 0,kod1c integer NOT NULL DEFAULT 0,name character(200) NOT NULL,datazak date,datavoz date,datapog date,
+val character(20) NOT NULL,datanacsh date,dataprsh date,stav numeric(5,2) NOT NULL DEFAULT 0,viddog character(20) NOT NULL,podr character(100) NOT NULL,otcblm numeric(5,2) NOT NULL DEFAULT 0,otcbagm numeric(5,2) NOT NULL DEFAULT 0,
+otcblp numeric(5,2) NOT NULL DEFAULT 0,otcbagp numeric(5,2) NOT NULL DEFAULT 0,komotd numeric(10,2) NOT NULL DEFAULT 0,med numeric(10,2) NOT NULL DEFAULT 0,ubor numeric(10,2) NOT NULL DEFAULT 0,stop numeric(10,2) NOT NULL DEFAULT 0,
+disp numeric(10,2) NOT NULL DEFAULT 0,voin numeric(5,2) NOT NULL DEFAULT 0,lgot numeric(5,2) NOT NULL DEFAULT 0,dopus numeric(5,2) NOT NULL DEFAULT 0,vidar character(200) NOT NULL,sumar numeric(20,2) NOT NULL DEFAULT 0,
+shtr1 numeric(10,2) NOT NULL DEFAULT 0,shtr11 numeric(10,2) NOT NULL DEFAULT 0,
+shtr2 numeric(10,2) NOT NULL DEFAULT 0,
+shtr3 numeric(10,2) NOT NULL DEFAULT 0,shtr4 numeric(10,2) NOT NULL DEFAULT 0,shtr41 numeric(10,2) NOT NULL DEFAULT 0,
+shtr5 numeric(10,2) NOT NULL DEFAULT 0,shtr6 numeric(10,2) NOT NULL DEFAULT 0,shtr7 numeric(10,2) NOT NULL DEFAULT 0,edizm1 character(20) NOT NULL,edizm11 character(20) NOT NULL,
+edizm2 character(20) NOT NULL,edizm3 character(20) NOT NULL,
+edizm4 character(20) NOT NULL,edizm41 character(20) NOT NULL,
+edizm5 character(20) NOT NULL,edizm6 character(20) NOT NULL,edizm7 character(20) NOT NULL,shtr8 numeric(10,2) NOT NULL DEFAULT 0,edizm8 character(20) NOT NULL,
+otcblr numeric(5,2) NOT NULL DEFAULT 0,otcbagr numeric(5,2) NOT NULL DEFAULT 0,otcblg numeric(5,2) NOT NULL DEFAULT 0,otcbagg numeric(5,2) NOT NULL DEFAULT 0,
+shtr12 numeric(10,2) NOT NULL DEFAULT 0,shtr13 numeric(10,2) NOT NULL DEFAULT 0,shtr21 numeric(10,2) NOT NULL DEFAULT 0,shtr22 numeric(10,2) NOT NULL DEFAULT 0,shtr23 numeric(10,2) NOT NULL DEFAULT 0,shtr24 numeric(10,2) NOT NULL DEFAULT 0,
+shtr42 numeric(10,2) NOT NULL DEFAULT 0,shtr43 numeric(10,2) NOT NULL DEFAULT 0,shtr44 numeric(10,2) NOT NULL DEFAULT 0,shtr45 numeric(10,2) NOT NULL DEFAULT 0,
+edizm12 character(20) NOT NULL,edizm13 character(20) NOT NULL,edizm21 character(20) NOT NULL,edizm22 character(20) NOT NULL,edizm23 character(20) NOT NULL,edizm24 character(20) NOT NULL,
+edizm42 character(20) NOT NULL,edizm43 character(20) NOT NULL,edizm44 character(20) NOT NULL,edizm45 character(20) NOT NULL
+) WITH (OIDS=FALSE);
+
+Изменений в справочнике договоров НЕ ОБНАРУЖЕНО!
+Данные не записаны !Не удается завершить транзакцию !!!Запрос SQL: CREATE LOCAL UNLOGGED TABLE tmp2Dog200713_1600076 (id integer NOT NULL DEFAULT 0,id_kontr integer NOT NULL DEFAULT 0,kodkont integer NOT NULL DEFAULT 0,kod1c integer NOT NULL DEFAULT 0,name character(200) NOT NULL,datazak date,datavoz date,datapog date,
+val character(20) NOT NULL,datanacsh date,dataprsh date,stav numeric(5,2) NOT NULL DEFAULT 0,viddog character(20) NOT NULL,podr character(100) NOT NULL,otcblm numeric(5,2) NOT NULL DEFAULT 0,otcbagm numeric(5,2) NOT NULL DEFAULT 0,
+otcblp numeric(5,2) NOT NULL DEFAULT 0,otcbagp numeric(5,2) NOT NULL DEFAULT 0,komotd numeric(10,2) NOT NULL DEFAULT 0,med numeric(10,2) NOT NULL DEFAULT 0,ubor numeric(10,2) NOT NULL DEFAULT 0,stop numeric(10,2) NOT NULL DEFAULT 0,
+disp numeric(10,2) NOT NULL DEFAULT 0,voin numeric(5,2) NOT NULL DEFAULT 0,lgot numeric(5,2) NOT NULL DEFAULT 0,dopus numeric(5,2) NOT NULL DEFAULT 0,vidar character(200) NOT NULL,sumar numeric(20,2) NOT NULL DEFAULT 0,
+shtr1 numeric(10,2) NOT NULL DEFAULT 0,shtr11 numeric(10,2) NOT NULL DEFAULT 0,
+shtr2 numeric(10,2) NOT NULL DEFAULT 0,
+shtr3 numeric(10,2) NOT NULL DEFAULT 0,shtr4 numeric(10,2) NOT NULL DEFAULT 0,shtr41 numeric(10,2) NOT NULL DEFAULT 0,
+shtr5 numeric(10,2) NOT NULL DEFAULT 0,shtr6 numeric(10,2) NOT NULL DEFAULT 0,shtr7 numeric(10,2) NOT NULL DEFAULT 0,edizm1 character(20) NOT NULL,edizm11 character(20) NOT NULL,
+edizm2 character(20) NOT NULL,edizm3 character(20) NOT NULL,
+edizm4 character(20) NOT NULL,edizm41 character(20) NOT NULL,
+edizm5 character(20) NOT NULL,edizm6 character(20) NOT NULL,edizm7 character(20) NOT NULL,shtr8 numeric(10,2) NOT NULL DEFAULT 0,edizm8 character(20) NOT NULL,
+otcblr numeric(5,2) NOT NULL DEFAULT 0,otcbagr numeric(5,2) NOT NULL DEFAULT 0,otcblg numeric(5,2) NOT NULL DEFAULT 0,otcbagg numeric(5,2) NOT NULL DEFAULT 0,
+shtr12 numeric(10,2) NOT NULL DEFAULT 0,shtr13 numeric(10,2) NOT NULL DEFAULT 0,shtr21 numeric(10,2) NOT NULL DEFAULT 0,shtr22 numeric(10,2) NOT NULL DEFAULT 0,shtr23 numeric(10,2) NOT NULL DEFAULT 0,shtr24 numeric(10,2) NOT NULL DEFAULT 0,
+shtr42 numeric(10,2) NOT NULL DEFAULT 0,shtr43 numeric(10,2) NOT NULL DEFAULT 0,shtr44 numeric(10,2) NOT NULL DEFAULT 0,shtr45 numeric(10,2) NOT NULL DEFAULT 0,
+edizm12 character(20) NOT NULL,edizm13 character(20) NOT NULL,edizm21 character(20) NOT NULL,edizm22 character(20) NOT NULL,edizm23 character(20) NOT NULL,edizm24 character(20) NOT NULL,
+edizm42 character(20) NOT NULL,edizm43 character(20) NOT NULL,edizm44 character(20) NOT NULL,edizm45 character(20) NOT NULL
+) WITH (OIDS=FALSE);
+
+ДОГОВОРА. Транзакция завершена УСПЕШНО !Добавлено  3222 ЗАПИСЕЙ !
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:08:21  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление  
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:08:47  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление  
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:09:18  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление  
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:13:04  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника ДОВОГОВОР...
+Данные не записаны !Не удается завершить транзакцию !!!Запрос SQL: CREATE LOCAL UNLOGGED TABLE tmp2Dog200713_1613574 (id integer NOT NULL DEFAULT 0,id_kontr integer NOT NULL DEFAULT 0,kodkont integer NOT NULL DEFAULT 0,kod1c integer NOT NULL DEFAULT 0,name character(200) NOT NULL,datazak date,datavoz date,datapog date,
+val character(20) NOT NULL,datanacsh date,dataprsh date,stav numeric(5,2) NOT NULL DEFAULT 0,viddog character(20) NOT NULL,podr character(100) NOT NULL,otcblm numeric(5,2) NOT NULL DEFAULT 0,otcbagm numeric(5,2) NOT NULL DEFAULT 0,
+otcblp numeric(5,2) NOT NULL DEFAULT 0,otcbagp numeric(5,2) NOT NULL DEFAULT 0,komotd numeric(10,2) NOT NULL DEFAULT 0,med numeric(10,2) NOT NULL DEFAULT 0,ubor numeric(10,2) NOT NULL DEFAULT 0,stop numeric(10,2) NOT NULL DEFAULT 0,
+disp numeric(10,2) NOT NULL DEFAULT 0,voin numeric(5,2) NOT NULL DEFAULT 0,lgot numeric(5,2) NOT NULL DEFAULT 0,dopus numeric(5,2) NOT NULL DEFAULT 0,vidar character(200) NOT NULL,sumar numeric(20,2) NOT NULL DEFAULT 0,
+shtr1 numeric(10,2) NOT NULL DEFAULT 0,shtr11 numeric(10,2) NOT NULL DEFAULT 0,
+shtr2 numeric(10,2) NOT NULL DEFAULT 0,
+shtr3 numeric(10,2) NOT NULL DEFAULT 0,shtr4 numeric(10,2) NOT NULL DEFAULT 0,shtr41 numeric(10,2) NOT NULL DEFAULT 0,
+shtr5 numeric(10,2) NOT NULL DEFAULT 0,shtr6 numeric(10,2) NOT NULL DEFAULT 0,shtr7 numeric(10,2) NOT NULL DEFAULT 0,edizm1 character(20) NOT NULL,edizm11 character(20) NOT NULL,
+edizm2 character(20) NOT NULL,edizm3 character(20) NOT NULL,
+edizm4 character(20) NOT NULL,edizm41 character(20) NOT NULL,
+edizm5 character(20) NOT NULL,edizm6 character(20) NOT NULL,edizm7 character(20) NOT NULL,shtr8 numeric(10,2) NOT NULL DEFAULT 0,edizm8 character(20) NOT NULL,
+otcblr numeric(5,2) NOT NULL DEFAULT 0,otcbagr numeric(5,2) NOT NULL DEFAULT 0,otcblg numeric(5,2) NOT NULL DEFAULT 0,otcbagg numeric(5,2) NOT NULL DEFAULT 0,
+shtr12 numeric(10,2) NOT NULL DEFAULT 0,shtr13 numeric(10,2) NOT NULL DEFAULT 0,shtr21 numeric(10,2) NOT NULL DEFAULT 0,shtr22 numeric(10,2) NOT NULL DEFAULT 0,shtr23 numeric(10,2) NOT NULL DEFAULT 0,shtr24 numeric(10,2) NOT NULL DEFAULT 0,
+shtr42 numeric(10,2) NOT NULL DEFAULT 0,shtr43 numeric(10,2) NOT NULL DEFAULT 0,shtr44 numeric(10,2) NOT NULL DEFAULT 0,shtr45 numeric(10,2) NOT NULL DEFAULT 0,
+edizm12 character(20) NOT NULL,edizm13 character(20) NOT NULL,edizm21 character(20) NOT NULL,edizm22 character(20) NOT NULL,edizm23 character(20) NOT NULL,edizm24 character(20) NOT NULL,
+edizm42 character(20) NOT NULL,edizm43 character(20) NOT NULL,edizm44 character(20) NOT NULL,edizm45 character(20) NOT NULL
+) WITH (OIDS=FALSE);
+
+ДОГОВОРА. Транзакция завершена УСПЕШНО !Добавлено  3222 ЗАПИСЕЙ !
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:15:51  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника ДОВОГОВОР...
+Данные не записаны !Не удается завершить транзакцию !!!Запрос SQL: CREATE LOCAL TABLE tmp2Dog200713_1615516 (id integer NOT NULL DEFAULT 0,id_kontr integer NOT NULL DEFAULT 0,kodkont integer NOT NULL DEFAULT 0,kod1c integer NOT NULL DEFAULT 0,name character(200) NOT NULL,datazak date,datavoz date,datapog date,
+val character(20) NOT NULL,datanacsh date,dataprsh date,stav numeric(5,2) NOT NULL DEFAULT 0,viddog character(20) NOT NULL,podr character(100) NOT NULL,otcblm numeric(5,2) NOT NULL DEFAULT 0,otcbagm numeric(5,2) NOT NULL DEFAULT 0,
+otcblp numeric(5,2) NOT NULL DEFAULT 0,otcbagp numeric(5,2) NOT NULL DEFAULT 0,komotd numeric(10,2) NOT NULL DEFAULT 0,med numeric(10,2) NOT NULL DEFAULT 0,ubor numeric(10,2) NOT NULL DEFAULT 0,stop numeric(10,2) NOT NULL DEFAULT 0,
+disp numeric(10,2) NOT NULL DEFAULT 0,voin numeric(5,2) NOT NULL DEFAULT 0,lgot numeric(5,2) NOT NULL DEFAULT 0,dopus numeric(5,2) NOT NULL DEFAULT 0,vidar character(200) NOT NULL,sumar numeric(20,2) NOT NULL DEFAULT 0,
+shtr1 numeric(10,2) NOT NULL DEFAULT 0,shtr11 numeric(10,2) NOT NULL DEFAULT 0,
+shtr2 numeric(10,2) NOT NULL DEFAULT 0,
+shtr3 numeric(10,2) NOT NULL DEFAULT 0,shtr4 numeric(10,2) NOT NULL DEFAULT 0,shtr41 numeric(10,2) NOT NULL DEFAULT 0,
+shtr5 numeric(10,2) NOT NULL DEFAULT 0,shtr6 numeric(10,2) NOT NULL DEFAULT 0,shtr7 numeric(10,2) NOT NULL DEFAULT 0,edizm1 character(20) NOT NULL,edizm11 character(20) NOT NULL,
+edizm2 character(20) NOT NULL,edizm3 character(20) NOT NULL,
+edizm4 character(20) NOT NULL,edizm41 character(20) NOT NULL,
+edizm5 character(20) NOT NULL,edizm6 character(20) NOT NULL,edizm7 character(20) NOT NULL,shtr8 numeric(10,2) NOT NULL DEFAULT 0,edizm8 character(20) NOT NULL,
+otcblr numeric(5,2) NOT NULL DEFAULT 0,otcbagr numeric(5,2) NOT NULL DEFAULT 0,otcblg numeric(5,2) NOT NULL DEFAULT 0,otcbagg numeric(5,2) NOT NULL DEFAULT 0,
+shtr12 numeric(10,2) NOT NULL DEFAULT 0,shtr13 numeric(10,2) NOT NULL DEFAULT 0,shtr21 numeric(10,2) NOT NULL DEFAULT 0,shtr22 numeric(10,2) NOT NULL DEFAULT 0,shtr23 numeric(10,2) NOT NULL DEFAULT 0,shtr24 numeric(10,2) NOT NULL DEFAULT 0,
+shtr42 numeric(10,2) NOT NULL DEFAULT 0,shtr43 numeric(10,2) NOT NULL DEFAULT 0,shtr44 numeric(10,2) NOT NULL DEFAULT 0,shtr45 numeric(10,2) NOT NULL DEFAULT 0,
+edizm12 character(20) NOT NULL,edizm13 character(20) NOT NULL,edizm21 character(20) NOT NULL,edizm22 character(20) NOT NULL,edizm23 character(20) NOT NULL,edizm24 character(20) NOT NULL,
+edizm42 character(20) NOT NULL,edizm43 character(20) NOT NULL,edizm44 character(20) NOT NULL,edizm45 character(20) NOT NULL
+) WITH (OIDS=FALSE);
+
+ДОГОВОРА. Транзакция завершена УСПЕШНО !Добавлено  3222 ЗАПИСЕЙ !
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    13.07.2020  16:19:21  ПН      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление  
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    14.07.2020  16:33:00  ВТ      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление  
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    22.07.2020  15:48:03  СР      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника контрагентов...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+5335   Дивенская АС  kod1c=21
+5354   Такси Невинномысск  kod1c=262
+5355   Ветераны  kod1c=1701
+5356   Прочие поставщики  kod1c=4056
+52  ЖКХ Андроповское  kod1c=72
+739  ЖКХ Солнечнодольск  kod1c=771
+2520  Охрана МВД Светлоград  kod1c=2579
+564  ЖКХ Грачевкого района  kod1c=593
+3869  ЖКХ Апанасенковского района  kod1c=3938
+4139  Водоканал  Дмитриевский  kod1c=4220
+3746  Мисюрин В.В.  kod1c=3813
+542  Водоканал  Новоселицкое  kod1c=570
+2832  Крайтеплоэнерго г.Новоалександ  kod1c=2892
+567  Крайтеплоэнерго Буденновск  kod1c=596
+4315    kod1c=4397
+4330  Комарова Ольга Александровна  kod1c=4412
+4349  Комарова Ольга Александровна  kod1c=4059
+4353  Красногвардейский филиал учреж  kod1c=4080
+4354  223313121221  kod1c=4434
+4355  Главное управление ФССП по СК  kod1c=4435
+4022  ххх  kod1c=4093
+4415  Комарова Ольга Александровна  kod1c=4496
+3986  Вещуров Р.А.  kod1c=4053
+4722  Борецкая О.В.  kod1c=4805
+4738  Лидер - став  kod1c=4821
+4740  Корпас  kod1c=4823
+4860  Теплосеть Невинномысск  kod1c=4943
+4865  ИП Полиди В.Ю.  kod1c=4948
+4699  ТАВРТРАНС  kod1c=4782
+6004  Северный Поток ( агентский дог  kod1c=6087
+4985  Ревтов В.Д.  kod1c=5067
+4924  Барышникова М.В. (фрахт)  kod1c=5006
+6068  Нечипуренко И.В.-зел  kod1c=6151
+6071  Эксперт АНО МЦОК - Маршала Жук  kod1c=6154
+6079  Немова Анна Владимировна  kod1c=6162
+6084  Костин Валерий Витальевич  kod1c=6167
+6085  Рябцев А.Ю.  kod1c=6168
+6086  Щербак Н.И.  kod1c=6169
+6087  Мулюкова Ольга Николаевна  kod1c=6170
+6088  Калашник Наталия Павловна  kod1c=6171
+6089  Пешкова Лариса Владимировна  kod1c=6172
+6090  Комаров Александр Александрови  kod1c=6173
+5104  Неволько И. Н  kod1c=5186
+5184  Пыльнов И.А.  kod1c=5266
+5669  ТарКор-К  kod1c=5725
+5425  "Ставропольский базовый медици  kod1c=5480
+5630  Костенко Т.В.  kod1c=5686
+5510  СРО СКО ВДПО  kod1c=5565
+5909  Торгсервис 26  kod1c=5992
+5601  Никитин В.Н.*  kod1c=5657
+5419  Евсеев. О.В. (Международные пе  kod1c=5474
+5815  ГП АЙТИКОМ  kod1c=5898
+5759  Ибиев Шамил Асадуллаевич  kod1c=5842
+3165  Охрана МВД Изобильный  kod1c=3229
+2218  Эльдорадо  kod1c=2271
+329  Букреев А. В.  kod1c=356
+5411  Сапронов А.Н..  kod1c=5466
+5567  ЧечПродТорг...  kod1c=5623
+2979  Охрана Невинномысск  kod1c=3042
+4023  Охрана МВД Арзгир, Буденновск  kod1c=4094
+3327  Ставропольский региональный ре  kod1c=3394
+3177  Ставропольский региональный ре  kod1c=3241
+5612  ТАТАРСТАН  kod1c=5668
+3886  ЖКХ   Степновского района  kod1c=3955
+4331  Панченко И.И.  kod1c=4413
+4411  Ставропольстройопторг  kod1c=4492
+4424  Каруев Юрий Борисович  kod1c=4505
+4471  Даймекс  kod1c=4552
+3545  Энергосбыт Пятигорск  kod1c=3614
+544  Горэлектросеть Буденновск  kod1c=572
+8  Саленко Н.Н.  kod1c=4
+3707  РТК Л.Ставка  kod1c=3774
+590  РТК Изобильный  kod1c=619
+595  РТК Новоселицкое  kod1c=624
+592  РТК Курская  kod1c=621
+596  РТК Светлоград  kod1c=625
+1680  РТК Степное  kod1c=1723
+589  РТК Благодарный  kod1c=618
+1449  РТК Левокумское  kod1c=1490
+584  РТК Грачевка  kod1c=613
+586  РТК Нефтекумск  kod1c=615
+687  РТК Красногвардейское  kod1c=718
+2452  РТК Ипатово  kod1c=2511
+2458  РТК Шпаковское  kod1c=2517
+43  РТК Зеленокумск  kod1c=60
+587  РТК Новоалександровск  kod1c=616
+591  РТК Кочубеевское  kod1c=620
+593  РТК Невинномысск  kod1c=622
+594  РТК Новопавловск  kod1c=623
+583  РТК  Арзгир  kod1c=612
+585  РТК Дивное  kod1c=614
+45  СКЭ Степное  kod1c=65
+3957  Зайцев В. Г.  kod1c=4024
+4217  Нечипоренко Олег Михайлович  kod1c=4298
+598  РТК Донское  kod1c=627
+688  РТК Буденновск  kod1c=719
+588  РТК  Александровское  kod1c=617
+4003  Охрана МВД Левокумское  kod1c=4073
+633  Энергосбыт  Благодарненский уч  kod1c=662
+628  Энергосбыт  Невинномысский уч.  kod1c=657
+627  Энергосбыт  Иргаклы  kod1c=656
+3168  Охрана МВД Зеленокумск  kod1c=3232
+4679  Семенов Н.И.-такси  kod1c=4762
+4688  Централизованный региональный  kod1c=4771
+4879  Карайкозов АВ  kod1c=4962
+5155  Эко-Сити  kod1c=5237
+5252  Газпромбанк  kod1c=5334
+6156  Севрюков Иван Александрович  kod1c=6246
+6157  Крестьянинова О.Н.  kod1c=6247
+6158  Лотникова В.В.  kod1c=6248
+===================================================================
+КОНТРАГЕНТЫ. Транзакция завершена УСПЕШНО !Отредактировано  38 ЗАПИСЕЙ !
+Обновление справочника ДОВОГОВОР...
+Ошибка ! Незавершенная транзакция !Попробуйте снова !
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    22.07.2020  15:49:01  СР      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника контрагентов...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+5335   Дивенская АС  kod1c=21
+5354   Такси Невинномысск  kod1c=262
+5355   Ветераны  kod1c=1701
+5356   Прочие поставщики  kod1c=4056
+52  ЖКХ Андроповское  kod1c=72
+739  ЖКХ Солнечнодольск  kod1c=771
+2520  Охрана МВД Светлоград  kod1c=2579
+564  ЖКХ Грачевкого района  kod1c=593
+3869  ЖКХ Апанасенковского района  kod1c=3938
+4139  Водоканал  Дмитриевский  kod1c=4220
+3746  Мисюрин В.В.  kod1c=3813
+542  Водоканал  Новоселицкое  kod1c=570
+2832  Крайтеплоэнерго г.Новоалександ  kod1c=2892
+567  Крайтеплоэнерго Буденновск  kod1c=596
+4315    kod1c=4397
+4330  Комарова Ольга Александровна  kod1c=4412
+4349  Комарова Ольга Александровна  kod1c=4059
+4353  Красногвардейский филиал учреж  kod1c=4080
+4354  223313121221  kod1c=4434
+4355  Главное управление ФССП по СК  kod1c=4435
+4022  ххх  kod1c=4093
+4415  Комарова Ольга Александровна  kod1c=4496
+3986  Вещуров Р.А.  kod1c=4053
+4722  Борецкая О.В.  kod1c=4805
+4738  Лидер - став  kod1c=4821
+4740  Корпас  kod1c=4823
+4860  Теплосеть Невинномысск  kod1c=4943
+4865  ИП Полиди В.Ю.  kod1c=4948
+4699  ТАВРТРАНС  kod1c=4782
+6004  Северный Поток ( агентский дог  kod1c=6087
+4985  Ревтов В.Д.  kod1c=5067
+4924  Барышникова М.В. (фрахт)  kod1c=5006
+6068  Нечипуренко И.В.-зел  kod1c=6151
+6071  Эксперт АНО МЦОК - Маршала Жук  kod1c=6154
+6079  Немова Анна Владимировна  kod1c=6162
+6084  Костин Валерий Витальевич  kod1c=6167
+6085  Рябцев А.Ю.  kod1c=6168
+6086  Щербак Н.И.  kod1c=6169
+6087  Мулюкова Ольга Николаевна  kod1c=6170
+6088  Калашник Наталия Павловна  kod1c=6171
+6089  Пешкова Лариса Владимировна  kod1c=6172
+6090  Комаров Александр Александрови  kod1c=6173
+5104  Неволько И. Н  kod1c=5186
+5184  Пыльнов И.А.  kod1c=5266
+5669  ТарКор-К  kod1c=5725
+5425  "Ставропольский базовый медици  kod1c=5480
+5630  Костенко Т.В.  kod1c=5686
+5510  СРО СКО ВДПО  kod1c=5565
+5909  Торгсервис 26  kod1c=5992
+5601  Никитин В.Н.*  kod1c=5657
+5419  Евсеев. О.В. (Международные пе  kod1c=5474
+5815  ГП АЙТИКОМ  kod1c=5898
+5759  Ибиев Шамил Асадуллаевич  kod1c=5842
+3165  Охрана МВД Изобильный  kod1c=3229
+2218  Эльдорадо  kod1c=2271
+329  Букреев А. В.  kod1c=356
+5411  Сапронов А.Н..  kod1c=5466
+5567  ЧечПродТорг...  kod1c=5623
+2979  Охрана Невинномысск  kod1c=3042
+4023  Охрана МВД Арзгир, Буденновск  kod1c=4094
+3327  Ставропольский региональный ре  kod1c=3394
+3177  Ставропольский региональный ре  kod1c=3241
+5612  ТАТАРСТАН  kod1c=5668
+3886  ЖКХ   Степновского района  kod1c=3955
+4331  Панченко И.И.  kod1c=4413
+4411  Ставропольстройопторг  kod1c=4492
+4424  Каруев Юрий Борисович  kod1c=4505
+4471  Даймекс  kod1c=4552
+3545  Энергосбыт Пятигорск  kod1c=3614
+544  Горэлектросеть Буденновск  kod1c=572
+8  Саленко Н.Н.  kod1c=4
+3707  РТК Л.Ставка  kod1c=3774
+590  РТК Изобильный  kod1c=619
+595  РТК Новоселицкое  kod1c=624
+592  РТК Курская  kod1c=621
+596  РТК Светлоград  kod1c=625
+1680  РТК Степное  kod1c=1723
+589  РТК Благодарный  kod1c=618
+1449  РТК Левокумское  kod1c=1490
+584  РТК Грачевка  kod1c=613
+586  РТК Нефтекумск  kod1c=615
+687  РТК Красногвардейское  kod1c=718
+2452  РТК Ипатово  kod1c=2511
+2458  РТК Шпаковское  kod1c=2517
+43  РТК Зеленокумск  kod1c=60
+587  РТК Новоалександровск  kod1c=616
+591  РТК Кочубеевское  kod1c=620
+593  РТК Невинномысск  kod1c=622
+594  РТК Новопавловск  kod1c=623
+583  РТК  Арзгир  kod1c=612
+585  РТК Дивное  kod1c=614
+45  СКЭ Степное  kod1c=65
+3957  Зайцев В. Г.  kod1c=4024
+4217  Нечипоренко Олег Михайлович  kod1c=4298
+598  РТК Донское  kod1c=627
+688  РТК Буденновск  kod1c=719
+588  РТК  Александровское  kod1c=617
+4003  Охрана МВД Левокумское  kod1c=4073
+633  Энергосбыт  Благодарненский уч  kod1c=662
+628  Энергосбыт  Невинномысский уч.  kod1c=657
+627  Энергосбыт  Иргаклы  kod1c=656
+3168  Охрана МВД Зеленокумск  kod1c=3232
+4679  Семенов Н.И.-такси  kod1c=4762
+4688  Централизованный региональный  kod1c=4771
+4879  Карайкозов АВ  kod1c=4962
+5155  Эко-Сити  kod1c=5237
+5252  Газпромбанк  kod1c=5334
+6156  Севрюков Иван Александрович  kod1c=6246
+6157  Крестьянинова О.Н.  kod1c=6247
+6158  Лотникова В.В.  kod1c=6248
+===================================================================
+Изменений в справочнике контрагентов НЕ ОБНАРУЖЕНО!
+Обновление справочника ДОВОГОВОР...
+ДОГОВОРА. Транзакция завершена УСПЕШНО !Отредактировано  239 ЗАПИСЕЙ !
+Обновление справочника ВИДОВ договоров...
+Изменений в справочнике видов договоров НЕ ОБНАРУЖЕНО!
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    28.07.2020  11:53:50  ВТ      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника контрагентов...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+5335   Дивенская АС  kod1c=21
+5354   Такси Невинномысск  kod1c=262
+5355   Ветераны  kod1c=1701
+5356   Прочие поставщики  kod1c=4056
+52  ЖКХ Андроповское  kod1c=72
+739  ЖКХ Солнечнодольск  kod1c=771
+2520  Охрана МВД Светлоград  kod1c=2579
+564  ЖКХ Грачевкого района  kod1c=593
+3869  ЖКХ Апанасенковского района  kod1c=3938
+4139  Водоканал  Дмитриевский  kod1c=4220
+3746  Мисюрин В.В.  kod1c=3813
+542  Водоканал  Новоселицкое  kod1c=570
+2832  Крайтеплоэнерго г.Новоалександ  kod1c=2892
+567  Крайтеплоэнерго Буденновск  kod1c=596
+4315    kod1c=4397
+4330  Комарова Ольга Александровна  kod1c=4412
+4349  Комарова Ольга Александровна  kod1c=4059
+4353  Красногвардейский филиал учреж  kod1c=4080
+4354  223313121221  kod1c=4434
+4355  Главное управление ФССП по СК  kod1c=4435
+4022  ххх  kod1c=4093
+4415  Комарова Ольга Александровна  kod1c=4496
+3986  Вещуров Р.А.  kod1c=4053
+4722  Борецкая О.В.  kod1c=4805
+4738  Лидер - став  kod1c=4821
+4740  Корпас  kod1c=4823
+4860  Теплосеть Невинномысск  kod1c=4943
+4865  ИП Полиди В.Ю.  kod1c=4948
+4699  ТАВРТРАНС  kod1c=4782
+6004  Северный Поток ( агентский дог  kod1c=6087
+4985  Ревтов В.Д.  kod1c=5067
+4924  Барышникова М.В. (фрахт)  kod1c=5006
+6068  Нечипуренко И.В.-зел  kod1c=6151
+6071  Эксперт АНО МЦОК - Маршала Жук  kod1c=6154
+6079  Немова Анна Владимировна  kod1c=6162
+6084  Костин Валерий Витальевич  kod1c=6167
+6085  Рябцев А.Ю.  kod1c=6168
+6086  Щербак Н.И.  kod1c=6169
+6087  Мулюкова Ольга Николаевна  kod1c=6170
+6088  Калашник Наталия Павловна  kod1c=6171
+6089  Пешкова Лариса Владимировна  kod1c=6172
+6090  Комаров Александр Александрови  kod1c=6173
+5104  Неволько И. Н  kod1c=5186
+5184  Пыльнов И.А.  kod1c=5266
+5669  ТарКор-К  kod1c=5725
+5425  "Ставропольский базовый медици  kod1c=5480
+5630  Костенко Т.В.  kod1c=5686
+5510  СРО СКО ВДПО  kod1c=5565
+5909  Торгсервис 26  kod1c=5992
+5601  Никитин В.Н.*  kod1c=5657
+5419  Евсеев. О.В. (Международные пе  kod1c=5474
+5815  ГП АЙТИКОМ  kod1c=5898
+5759  Ибиев Шамил Асадуллаевич  kod1c=5842
+3165  Охрана МВД Изобильный  kod1c=3229
+2218  Эльдорадо  kod1c=2271
+329  Букреев А. В.  kod1c=356
+5411  Сапронов А.Н..  kod1c=5466
+5567  ЧечПродТорг...  kod1c=5623
+2979  Охрана Невинномысск  kod1c=3042
+4023  Охрана МВД Арзгир, Буденновск  kod1c=4094
+3327  Ставропольский региональный ре  kod1c=3394
+3177  Ставропольский региональный ре  kod1c=3241
+5612  ТАТАРСТАН  kod1c=5668
+3886  ЖКХ   Степновского района  kod1c=3955
+4331  Панченко И.И.  kod1c=4413
+4411  Ставропольстройопторг  kod1c=4492
+4424  Каруев Юрий Борисович  kod1c=4505
+4471  Даймекс  kod1c=4552
+3545  Энергосбыт Пятигорск  kod1c=3614
+544  Горэлектросеть Буденновск  kod1c=572
+8  Саленко Н.Н.  kod1c=4
+3707  РТК Л.Ставка  kod1c=3774
+590  РТК Изобильный  kod1c=619
+595  РТК Новоселицкое  kod1c=624
+592  РТК Курская  kod1c=621
+596  РТК Светлоград  kod1c=625
+1680  РТК Степное  kod1c=1723
+589  РТК Благодарный  kod1c=618
+1449  РТК Левокумское  kod1c=1490
+584  РТК Грачевка  kod1c=613
+586  РТК Нефтекумск  kod1c=615
+687  РТК Красногвардейское  kod1c=718
+2452  РТК Ипатово  kod1c=2511
+2458  РТК Шпаковское  kod1c=2517
+43  РТК Зеленокумск  kod1c=60
+587  РТК Новоалександровск  kod1c=616
+591  РТК Кочубеевское  kod1c=620
+593  РТК Невинномысск  kod1c=622
+594  РТК Новопавловск  kod1c=623
+583  РТК  Арзгир  kod1c=612
+585  РТК Дивное  kod1c=614
+45  СКЭ Степное  kod1c=65
+3957  Зайцев В. Г.  kod1c=4024
+4217  Нечипоренко Олег Михайлович  kod1c=4298
+598  РТК Донское  kod1c=627
+688  РТК Буденновск  kod1c=719
+588  РТК  Александровское  kod1c=617
+4003  Охрана МВД Левокумское  kod1c=4073
+633  Энергосбыт  Благодарненский уч  kod1c=662
+628  Энергосбыт  Невинномысский уч.  kod1c=657
+627  Энергосбыт  Иргаклы  kod1c=656
+3168  Охрана МВД Зеленокумск  kod1c=3232
+4679  Семенов Н.И.-такси  kod1c=4762
+4688  Централизованный региональный  kod1c=4771
+4879  Карайкозов АВ  kod1c=4962
+5155  Эко-Сити  kod1c=5237
+5252  Газпромбанк  kod1c=5334
+6156  Севрюков Иван Александрович  kod1c=6246
+6157  Крестьянинова О.Н.  kod1c=6247
+6158  Лотникова В.В.  kod1c=6248
+===================================================================
+Изменений в справочнике контрагентов НЕ ОБНАРУЖЕНО!
+Обновление справочника ДОВОГОВОР...
+Изменений в справочнике договоров НЕ ОБНАРУЖЕНО!
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    28.07.2020  11:55:37  ВТ      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника контрагентов...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+5335   Дивенская АС  kod1c=21
+5354   Такси Невинномысск  kod1c=262
+5355   Ветераны  kod1c=1701
+5356   Прочие поставщики  kod1c=4056
+52  ЖКХ Андроповское  kod1c=72
+739  ЖКХ Солнечнодольск  kod1c=771
+2520  Охрана МВД Светлоград  kod1c=2579
+564  ЖКХ Грачевкого района  kod1c=593
+3869  ЖКХ Апанасенковского района  kod1c=3938
+4139  Водоканал  Дмитриевский  kod1c=4220
+3746  Мисюрин В.В.  kod1c=3813
+542  Водоканал  Новоселицкое  kod1c=570
+2832  Крайтеплоэнерго г.Новоалександ  kod1c=2892
+567  Крайтеплоэнерго Буденновск  kod1c=596
+4315    kod1c=4397
+4330  Комарова Ольга Александровна  kod1c=4412
+4349  Комарова Ольга Александровна  kod1c=4059
+4353  Красногвардейский филиал учреж  kod1c=4080
+4354  223313121221  kod1c=4434
+4355  Главное управление ФССП по СК  kod1c=4435
+4022  ххх  kod1c=4093
+4415  Комарова Ольга Александровна  kod1c=4496
+3986  Вещуров Р.А.  kod1c=4053
+4722  Борецкая О.В.  kod1c=4805
+4738  Лидер - став  kod1c=4821
+4740  Корпас  kod1c=4823
+4860  Теплосеть Невинномысск  kod1c=4943
+4865  ИП Полиди В.Ю.  kod1c=4948
+4699  ТАВРТРАНС  kod1c=4782
+6004  Северный Поток ( агентский дог  kod1c=6087
+4985  Ревтов В.Д.  kod1c=5067
+4924  Барышникова М.В. (фрахт)  kod1c=5006
+6068  Нечипуренко И.В.-зел  kod1c=6151
+6071  Эксперт АНО МЦОК - Маршала Жук  kod1c=6154
+6079  Немова Анна Владимировна  kod1c=6162
+6084  Костин Валерий Витальевич  kod1c=6167
+6085  Рябцев А.Ю.  kod1c=6168
+6086  Щербак Н.И.  kod1c=6169
+6087  Мулюкова Ольга Николаевна  kod1c=6170
+6088  Калашник Наталия Павловна  kod1c=6171
+6089  Пешкова Лариса Владимировна  kod1c=6172
+6090  Комаров Александр Александрови  kod1c=6173
+5104  Неволько И. Н  kod1c=5186
+5184  Пыльнов И.А.  kod1c=5266
+5669  ТарКор-К  kod1c=5725
+5425  "Ставропольский базовый медици  kod1c=5480
+5630  Костенко Т.В.  kod1c=5686
+5510  СРО СКО ВДПО  kod1c=5565
+5909  Торгсервис 26  kod1c=5992
+5601  Никитин В.Н.*  kod1c=5657
+5419  Евсеев. О.В. (Международные пе  kod1c=5474
+5815  ГП АЙТИКОМ  kod1c=5898
+5759  Ибиев Шамил Асадуллаевич  kod1c=5842
+3165  Охрана МВД Изобильный  kod1c=3229
+2218  Эльдорадо  kod1c=2271
+329  Букреев А. В.  kod1c=356
+5411  Сапронов А.Н..  kod1c=5466
+5567  ЧечПродТорг...  kod1c=5623
+2979  Охрана Невинномысск  kod1c=3042
+4023  Охрана МВД Арзгир, Буденновск  kod1c=4094
+3327  Ставропольский региональный ре  kod1c=3394
+3177  Ставропольский региональный ре  kod1c=3241
+5612  ТАТАРСТАН  kod1c=5668
+3886  ЖКХ   Степновского района  kod1c=3955
+4331  Панченко И.И.  kod1c=4413
+4411  Ставропольстройопторг  kod1c=4492
+4424  Каруев Юрий Борисович  kod1c=4505
+4471  Даймекс  kod1c=4552
+3545  Энергосбыт Пятигорск  kod1c=3614
+544  Горэлектросеть Буденновск  kod1c=572
+8  Саленко Н.Н.  kod1c=4
+3707  РТК Л.Ставка  kod1c=3774
+590  РТК Изобильный  kod1c=619
+595  РТК Новоселицкое  kod1c=624
+592  РТК Курская  kod1c=621
+596  РТК Светлоград  kod1c=625
+1680  РТК Степное  kod1c=1723
+589  РТК Благодарный  kod1c=618
+1449  РТК Левокумское  kod1c=1490
+584  РТК Грачевка  kod1c=613
+586  РТК Нефтекумск  kod1c=615
+687  РТК Красногвардейское  kod1c=718
+2452  РТК Ипатово  kod1c=2511
+2458  РТК Шпаковское  kod1c=2517
+43  РТК Зеленокумск  kod1c=60
+587  РТК Новоалександровск  kod1c=616
+591  РТК Кочубеевское  kod1c=620
+593  РТК Невинномысск  kod1c=622
+594  РТК Новопавловск  kod1c=623
+583  РТК  Арзгир  kod1c=612
+585  РТК Дивное  kod1c=614
+45  СКЭ Степное  kod1c=65
+3957  Зайцев В. Г.  kod1c=4024
+4217  Нечипоренко Олег Михайлович  kod1c=4298
+598  РТК Донское  kod1c=627
+688  РТК Буденновск  kod1c=719
+588  РТК  Александровское  kod1c=617
+4003  Охрана МВД Левокумское  kod1c=4073
+633  Энергосбыт  Благодарненский уч  kod1c=662
+628  Энергосбыт  Невинномысский уч.  kod1c=657
+627  Энергосбыт  Иргаклы  kod1c=656
+3168  Охрана МВД Зеленокумск  kod1c=3232
+4679  Семенов Н.И.-такси  kod1c=4762
+4688  Централизованный региональный  kod1c=4771
+4879  Карайкозов АВ  kod1c=4962
+5155  Эко-Сити  kod1c=5237
+5252  Газпромбанк  kod1c=5334
+6156  Севрюков Иван Александрович  kod1c=6246
+6157  Крестьянинова О.Н.  kod1c=6247
+6158  Лотникова В.В.  kod1c=6248
+===================================================================
+Изменений в справочнике контрагентов НЕ ОБНАРУЖЕНО!
+Обновление справочника ДОВОГОВОР...
+Изменений в справочнике договоров НЕ ОБНАРУЖЕНО!
+Обновление справочника ВИДОВ договоров...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+227  Обработка фискальных данных  kod1c=232
+228  Установка пожарного гидранта  kod1c=233
+229  Комиссия за прием денежной наличности  kod1c=234
+230  Замеры факторов производственной среды  kod1c=235
+231  Модернизация программы  kod1c=236
+232  Серветут  kod1c=237
+233  Баннер  kod1c=238
+234  Инкассация наличных денег  kod1c=239
+235  Замена электрического счетчика  kod1c=240
+236  Аттестация узла учета газа  kod1c=241
+237  Первичный пуск газа  kod1c=242
+238  Плата за подключение  kod1c=243
+239  Поверка огнетушителей  kod1c=244
+1  Аренда  kod1c=1
+2  Перевозка  kod1c=2
+3  Коммунальные услуги  kod1c=3
+4  ВВод остатков  kod1c=4
+5  Оказание услуг  kod1c=5
+6  Аренда радиостанции  kod1c=6
+7  Организация а/перевозок  kod1c=7
+8  Услуги банка (инкассация)  kod1c=8
+9  Автоуслуги  kod1c=9
+10  Купли-продажи  kod1c=10
+11  расходы на рекламу  kod1c=11
+12  техническое обслуживание  kod1c=12
+13  ремонтные работы  kod1c=13
+14  строительные работы  kod1c=14
+15  Обследование дымоходов  kod1c=15
+16  навигационный контроль  kod1c=16
+17  перечисление во вклады  kod1c=17
+18  Обучение  kod1c=18
+19  платный въезд  kod1c=19
+20  обязательное личное страхование пассажиров  kod1c=20
+21  кредиты и займы  kod1c=21
+22  Подписка на газеты и журналы  kod1c=22
+23  Обязательный страховой сбор  kod1c=23
+24  Путевки  kod1c=24
+25  перевозка оперативной статистической почты  kod1c=25
+26  инструктаж  kod1c=26
+27  Не формирует проводку  kod1c=27
+28  Аренда земельного участка  kod1c=28
+29  Предварительная продажа билетов  kod1c=29
+30  Гос.поверка счетчика  kod1c=30
+31  исполнительный лист  kod1c=31
+32  Консультационные услуги  kod1c=32
+33  Безвозмездная помощь  kod1c=33
+34  Воинские перевозки  kod1c=34
+35  Страхование имущества  kod1c=35
+36  Приобретение нормативной базы в формате "АВС-4"  kod1c=36
+37  Поставка системы АВС-4  kod1c=37
+38  Участие  в семинаре  kod1c=38
+39  Проектные работы  kod1c=39
+40  поставка программных продуктов  kod1c=40
+41  Сопровождение программного обеспечения  kod1c=41
+42  Регистрация водосчетчика  kod1c=42
+43  Агентский договор  kod1c=43
+44  Зарядка огнетушителей  kod1c=44
+45  Поверка газового счетчика  kod1c=45
+46  Услуги по снятию и установки счетчика  kod1c=46
+47  Расчеты с учредителями  kod1c=47
+48  Изготовление и монтаж окон  kod1c=48
+49  Телефонизация  kod1c=49
+50  Страхование от несчастных случаев  kod1c=50
+51  Монтаж теплового узла  kod1c=51
+52  Изготовление технической документации  kod1c=52
+53  техническое обслуживание автомобиля  kod1c=53
+54  Огнезащита деревянных конструкций  kod1c=54
+55  за составление паспорта маршрута  kod1c=55
+56  Подготовка землеустроительного дела  kod1c=56
+57  Монтаж систеы водоснабжения  kod1c=57
+58  Технико-эконоический расчет потребности тепла  kod1c=58
+59  Очистка от снега дорог  kod1c=59
+60  Страхование ОПО  kod1c=60
+61  Изоляция трубопроводов  kod1c=61
+62  перечисление заработной платы  kod1c=62
+63  Аудиторские услуги  kod1c=63
+64  Установка системы пожарной сигнализации  kod1c=64
+65  Врезка в водопроводную сеть  kod1c=65
+66  Монтаж охранной сигнализации  kod1c=66
+67  Технический надзор  kod1c=67
+68  Выкачка уличного туалете  kod1c=68
+69  Гидравлическое испытание системы отопления  kod1c=69
+70  Электротехнические измерения  kod1c=70
+71  Замена водомера  kod1c=71
+72  Фрахтование  kod1c=72
+73  Опломбирование счетчика  kod1c=73
+74  Замена котла  kod1c=74
+75  Подготовка сигнализатора  kod1c=75
+76  Технические условия  kod1c=76
+77  Санитарно-эпидемиологическая экспертиза  kod1c=77
+78  Инженерно-топографическая съемка  kod1c=78
+79  Газификация автостанции  kod1c=79
+80  Установка тревожной сигнализации  kod1c=80
+81  Предоставление площадей для рекламы  kod1c=81
+82  Профилактические испытания  kod1c=82
+83  Лабораторный испытания  kod1c=83
+84  Возмещение ущерба  kod1c=84
+85  Технический осмотр автомобиля  kod1c=85
+86  Услуги связи  kod1c=86
+87  Выход врача-эпидемиолога  kod1c=87
+88  Проведение экспертизы  kod1c=88
+89  Вывоз мусора и нечистот  kod1c=89
+90  Обследование системы центрального отопления  kod1c=90
+91  Проведение исследований  kod1c=91
+92  Испытание эл.инструмента  kod1c=92
+93  Информационные услуги  kod1c=93
+94  Изготовление землеустроительных  дел  kod1c=94
+95  Подготовка градостроительного плана  kod1c=95
+96  Залогодатель  kod1c=96
+97  Переустановка системы кондиционнирования  kod1c=97
+98  Экспертиза предрейсовых осмотров  kod1c=98
+99  Заключение о подачи газа  kod1c=99
+100  Техническая инвентаризация  kod1c=100
+101  Демонтаж и монтаж элект.счетчика  kod1c=101
+102  Технологическое присоединение  kod1c=102
+103  Договор с министерством транспорта  kod1c=103
+104  Поверка сигнализаторов  kod1c=104
+105  Межевание земельного участка  kod1c=105
+106  Заправка картриджа  kod1c=106
+107  Страхование опасных производственных объектов  kod1c=107
+108  Землеустроительные работы  kod1c=108
+109  Отделочные работы  kod1c=109
+110  Установка котла  kod1c=110
+111  Мед.осмотр  kod1c=111
+112  Устройство ограждения  kod1c=112
+113  Устройство навеса  kod1c=113
+114  Изготовление ТЭР  kod1c=114
+115  Электро-монтажные работы  kod1c=115
+116  Вызов мастера  kod1c=116
+117  Благоустройство территории  kod1c=117
+118  Реконструкция здания  kod1c=118
+119  Финансирование предупредительных мероприятий  kod1c=119
+120  Монтаж питающей линии  kod1c=120
+121  Пуско-наладочные работы  kod1c=121
+122  Изготовление световых панелей  kod1c=122
+123  Охрана  kod1c=123
+124  Кадастровые работы  kod1c=124
+125  Безвозмездное пользование муниципальным имуществом  kod1c=125
+126  Техническое диагностирование  kod1c=126
+127  Монтаж букв  kod1c=127
+128  Экспертиза промышленной безопасности  kod1c=128
+129  Изготовление кадастровых паспортов  kod1c=129
+130  Обследование объекта  kod1c=130
+131  ОСАГО  kod1c=131
+132  Монтаж и установка оборудования  kod1c=132
+133  Сервисное обслуживание котла  kod1c=133
+134  Утилизация ртутьсодержащих ламп  kod1c=134
+135  Выкуп земельного участка  kod1c=135
+136  Оценка рыночной стоимости имущества  kod1c=136
+137  Возмещение электроэнергии  kod1c=137
+138  Услуги по доставке  kod1c=138
+139  Услуги связанные с изданием сертификатов ключа  kod1c=139
+140  Разработка плана эвакуации  kod1c=140
+141  Переплет архивных документов  kod1c=141
+142  Выдача справки-согласия  kod1c=142
+143  Замена газового счетчика  kod1c=143
+144  Услуги по выдаче исходных данных на установку газ.  kod1c=144
+145  Стирка штор  kod1c=145
+146  Предпроектное обследование  kod1c=146
+147  Программный продукт  kod1c=147
+148  Подготовка декларации пожарной безопасности  kod1c=148
+149  Проверка комплекса расчетного учета элект.счетчика  kod1c=149
+150  Мониторинг экологической обстановки  kod1c=150
+151  Замена датчика  kod1c=151
+152  Приемка в эксплуатацию  kod1c=152
+153  Изготовление и монтаж дверей  kod1c=153
+154  Устройство канализации  kod1c=154
+155  Отключение от системы теплоснабжения  kod1c=155
+156  Подключение отопительного котла  kod1c=156
+157  Изменение технической документации  kod1c=157
+158  Установка логотипов  kod1c=158
+159  Опил деревьев  kod1c=159
+160  Поставка товара  kod1c=160
+161  Установка противопожарной двери 2230*1490  kod1c=161
+162  Формирование землеустроительной документации  kod1c=162
+163  Изготовление топографической съемки  kod1c=163
+164  Установка металлических каркассов  kod1c=165
+165  Выдача копий архивных данных  kod1c=166
+166  Врезка и пуск газа  kod1c=167
+167  Установка противопожарного люка  kod1c=168
+168  Поставка программного обеспечения  kod1c=169
+169  Установка оконных и дверных блоков  kod1c=170
+170  Замена оконных блоков  kod1c=171
+171  Реализация билетов  kod1c=172
+172  Отделочные работы в торговом киоске  kod1c=177
+173  Изготовление плана эвакуации  kod1c=178
+174  Оформлениет межевого плана  kod1c=179
+175  Распиловка деревьев  kod1c=180
+176  Страхование имущества в залоге  kod1c=181
+177  Внедрение автоматизированной системы 1С  kod1c=182
+178  разработка проекта нормативов образования отходов  kod1c=183
+179  Проверка дымоходов  kod1c=184
+180  Установка ограждения  kod1c=185
+181  Присвоение почтовых адресов  kod1c=186
+182  Оценка уязвимости  kod1c=187
+183  Техническое обслуживание сигнализаторов  kod1c=188
+184  Справка  kod1c=189
+185  Установка насоса  kod1c=190
+186  Наладка учета газа  kod1c=191
+187  Профосмотр  kod1c=192
+188  Согласование проекта  kod1c=193
+189  Страхование гражданской ответственности  kod1c=194
+190  Санаторно-курортные услуги  kod1c=195
+191  Возмещение теплопотребление  kod1c=196
+192  Подготовка материалов к лицензированию  kod1c=197
+193  Прочистка канализации  kod1c=198
+194  Установка сигнализаторов загазованности  kod1c=199
+195  Оформлениет проекта предельно допустимых выбросов  kod1c=200
+196  Подключения доступа к сети интернет  kod1c=201
+197  Обслуживание опасного производственного объекта  kod1c=202
+198  Демонтаж и монтаж газового счетчика  kod1c=203
+199  Изготовление банера  kod1c=204
+200  Реклама  kod1c=205
+201  Комната отдыха  kod1c=206
+202  Врезка в газовую сеть  kod1c=207
+203  Ведение реестра владельцев ценных бумаг  kod1c=208
+204  Промывка системы отопления  kod1c=209
+205  Изготовление информационных табличек  kod1c=210
+206  Монтаж  алюминиевой конструкции  kod1c=211
+207  ночная стоянка автобуса  kod1c=212
+208  Услуги ночной стоянки автобусов  kod1c=213
+209  Установка решетки раздвижной  kod1c=214
+210  Бронирование автомобиля  kod1c=215
+211  Топографическая съемка  kod1c=216
+212  Неисключительная лицензия  kod1c=217
+213  Подготовка к проведению и выполнение счетной комис  kod1c=218
+214  Проценты по договору неснижаемого остатка  kod1c=219
+215  Продажа билетов  kod1c=220
+216  Поверка  водомера  kod1c=221
+217  Установка дорожных знаков  kod1c=222
+218  Предоставление доступа к сети Интернет  kod1c=223
+219  Организация услуги Wi-Fi  kod1c=224
+220  Устройство узла учета тепловой энергии  kod1c=225
+221  Оформление исполнительно-технической документации  kod1c=226
+222  Обслуживание аквариума  kod1c=227
+223  Перезарядка огнетушителей  kod1c=228
+224  Услуги банка (обслуживание карт сотрудников)  kod1c=229
+225  Снятие и установка прибора учета  kod1c=230
+226  Почтовые переводы  kod1c=231
+===================================================================
+Изменений в справочнике видов договоров НЕ ОБНАРУЖЕНО!
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    28.07.2020  15:13:44  ВТ      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника контрагентов...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+5335   Дивенская АС  kod1c=21
+5354   Такси Невинномысск  kod1c=262
+5355   Ветераны  kod1c=1701
+5356   Прочие поставщики  kod1c=4056
+52  ЖКХ Андроповское  kod1c=72
+739  ЖКХ Солнечнодольск  kod1c=771
+2520  Охрана МВД Светлоград  kod1c=2579
+564  ЖКХ Грачевкого района  kod1c=593
+3869  ЖКХ Апанасенковского района  kod1c=3938
+4139  Водоканал  Дмитриевский  kod1c=4220
+3746  Мисюрин В.В.  kod1c=3813
+542  Водоканал  Новоселицкое  kod1c=570
+2832  Крайтеплоэнерго г.Новоалександ  kod1c=2892
+567  Крайтеплоэнерго Буденновск  kod1c=596
+4315    kod1c=4397
+4330  Комарова Ольга Александровна  kod1c=4412
+4349  Комарова Ольга Александровна  kod1c=4059
+4353  Красногвардейский филиал учреж  kod1c=4080
+4354  223313121221  kod1c=4434
+4355  Главное управление ФССП по СК  kod1c=4435
+4022  ххх  kod1c=4093
+4415  Комарова Ольга Александровна  kod1c=4496
+3986  Вещуров Р.А.  kod1c=4053
+4722  Борецкая О.В.  kod1c=4805
+4738  Лидер - став  kod1c=4821
+4740  Корпас  kod1c=4823
+4860  Теплосеть Невинномысск  kod1c=4943
+4865  ИП Полиди В.Ю.  kod1c=4948
+4699  ТАВРТРАНС  kod1c=4782
+6004  Северный Поток ( агентский дог  kod1c=6087
+4985  Ревтов В.Д.  kod1c=5067
+4924  Барышникова М.В. (фрахт)  kod1c=5006
+6068  Нечипуренко И.В.-зел  kod1c=6151
+6071  Эксперт АНО МЦОК - Маршала Жук  kod1c=6154
+6079  Немова Анна Владимировна  kod1c=6162
+6084  Костин Валерий Витальевич  kod1c=6167
+6085  Рябцев А.Ю.  kod1c=6168
+6086  Щербак Н.И.  kod1c=6169
+6087  Мулюкова Ольга Николаевна  kod1c=6170
+6088  Калашник Наталия Павловна  kod1c=6171
+6089  Пешкова Лариса Владимировна  kod1c=6172
+6090  Комаров Александр Александрови  kod1c=6173
+5104  Неволько И. Н  kod1c=5186
+5184  Пыльнов И.А.  kod1c=5266
+5669  ТарКор-К  kod1c=5725
+5425  "Ставропольский базовый медици  kod1c=5480
+5630  Костенко Т.В.  kod1c=5686
+5510  СРО СКО ВДПО  kod1c=5565
+5909  Торгсервис 26  kod1c=5992
+5601  Никитин В.Н.*  kod1c=5657
+5419  Евсеев. О.В. (Международные пе  kod1c=5474
+5815  ГП АЙТИКОМ  kod1c=5898
+5759  Ибиев Шамил Асадуллаевич  kod1c=5842
+3165  Охрана МВД Изобильный  kod1c=3229
+2218  Эльдорадо  kod1c=2271
+329  Букреев А. В.  kod1c=356
+5411  Сапронов А.Н..  kod1c=5466
+5567  ЧечПродТорг...  kod1c=5623
+2979  Охрана Невинномысск  kod1c=3042
+4023  Охрана МВД Арзгир, Буденновск  kod1c=4094
+3327  Ставропольский региональный ре  kod1c=3394
+3177  Ставропольский региональный ре  kod1c=3241
+5612  ТАТАРСТАН  kod1c=5668
+3886  ЖКХ   Степновского района  kod1c=3955
+4331  Панченко И.И.  kod1c=4413
+4411  Ставропольстройопторг  kod1c=4492
+4424  Каруев Юрий Борисович  kod1c=4505
+4471  Даймекс  kod1c=4552
+3545  Энергосбыт Пятигорск  kod1c=3614
+544  Горэлектросеть Буденновск  kod1c=572
+8  Саленко Н.Н.  kod1c=4
+3707  РТК Л.Ставка  kod1c=3774
+590  РТК Изобильный  kod1c=619
+595  РТК Новоселицкое  kod1c=624
+592  РТК Курская  kod1c=621
+596  РТК Светлоград  kod1c=625
+1680  РТК Степное  kod1c=1723
+589  РТК Благодарный  kod1c=618
+1449  РТК Левокумское  kod1c=1490
+584  РТК Грачевка  kod1c=613
+586  РТК Нефтекумск  kod1c=615
+687  РТК Красногвардейское  kod1c=718
+2452  РТК Ипатово  kod1c=2511
+2458  РТК Шпаковское  kod1c=2517
+43  РТК Зеленокумск  kod1c=60
+587  РТК Новоалександровск  kod1c=616
+591  РТК Кочубеевское  kod1c=620
+593  РТК Невинномысск  kod1c=622
+594  РТК Новопавловск  kod1c=623
+583  РТК  Арзгир  kod1c=612
+585  РТК Дивное  kod1c=614
+45  СКЭ Степное  kod1c=65
+3957  Зайцев В. Г.  kod1c=4024
+4217  Нечипоренко Олег Михайлович  kod1c=4298
+598  РТК Донское  kod1c=627
+688  РТК Буденновск  kod1c=719
+588  РТК  Александровское  kod1c=617
+4003  Охрана МВД Левокумское  kod1c=4073
+633  Энергосбыт  Благодарненский уч  kod1c=662
+628  Энергосбыт  Невинномысский уч.  kod1c=657
+627  Энергосбыт  Иргаклы  kod1c=656
+3168  Охрана МВД Зеленокумск  kod1c=3232
+4679  Семенов Н.И.-такси  kod1c=4762
+4688  Централизованный региональный  kod1c=4771
+4879  Карайкозов АВ  kod1c=4962
+5155  Эко-Сити  kod1c=5237
+5252  Газпромбанк  kod1c=5334
+6156  Севрюков Иван Александрович  kod1c=6246
+6157  Крестьянинова О.Н.  kod1c=6247
+6158  Лотникова В.В.  kod1c=6248
+===================================================================
+Изменений в справочнике контрагентов НЕ ОБНАРУЖЕНО!
+Обновление справочника ДОВОГОВОР...
+Изменений в справочнике договоров НЕ ОБНАРУЖЕНО!
+ 
+ 
+@@@@@@@@@@@@@@@@@@@@@@@@    ОБНОВЛЕНИЕ СПРАВОЧНИКОВ   @@@@@@@@@@@@@@@@@@@@@@@@@
+|||||||||||||||||||||    28.07.2020  15:14:58  ВТ      |||||||||||||||||||||
+ обновление проводил пользователь с id= 5555
+=================  Подлключаемся к базе данных ... ===============================
+=================  Начат процесс ОБНОВЛЕНИЯ ! ПОДОЖДИТЕ ... ===============================
+Обновление справочника контрагентов...
+!!! В ЗАГРУЖАЕМОМ СПРАВОЧНИКЕ ОТСУТСТВУЮТ СЛЕДУЮЩИЕ ЗАПИСИ... !!!
+5335   Дивенская АС  kod1c=21
+5354   Такси Невинномысск  kod1c=262
+5355   Ветераны  kod1c=1701
+5356   Прочие поставщики  kod1c=4056
+52  ЖКХ Андроповское  kod1c=72
+739  ЖКХ Солнечнодольск  kod1c=771
+2520  Охрана МВД Светлоград  kod1c=2579
+564  ЖКХ Грачевкого района  kod1c=593
+3869  ЖКХ Апанасенковского района  kod1c=3938
+4139  Водоканал  Дмитриевский  kod1c=4220
+3746  Мисюрин В.В.  kod1c=3813
+542  Водоканал  Новоселицкое  kod1c=570
+2832  Крайтеплоэнерго г.Новоалександ  kod1c=2892
+567  Крайтеплоэнерго Буденновск  kod1c=596
+4315    kod1c=4397
+4330  Комарова Ольга Александровна  kod1c=4412
+4349  Комарова Ольга Александровна  kod1c=4059
+4353  Красногвардейский филиал учреж  kod1c=4080
+4354  223313121221  kod1c=4434
+4355  Главное управление ФССП по СК  kod1c=4435
+4022  ххх  kod1c=4093
+4415  Комарова Ольга Александровна  kod1c=4496
+3986  Вещуров Р.А.  kod1c=4053
+4722  Борецкая О.В.  kod1c=4805
+4738  Лидер - став  kod1c=4821
+4740  Корпас  kod1c=4823
+4860  Теплосеть Невинномысск  kod1c=4943
+4865  ИП Полиди В.Ю.  kod1c=4948
+4699  ТАВРТРАНС  kod1c=4782
+6004  Северный Поток ( агентский дог  kod1c=6087
+4985  Ревтов В.Д.  kod1c=5067
+4924  Барышникова М.В. (фрахт)  kod1c=5006
+6068  Нечипуренко И.В.-зел  kod1c=6151
+6071  Эксперт АНО МЦОК - Маршала Жук  kod1c=6154
+6079  Немова Анна Владимировна  kod1c=6162
+6084  Костин Валерий Витальевич  kod1c=6167
+6085  Рябцев А.Ю.  kod1c=6168
+6086  Щербак Н.И.  kod1c=6169
+6087  Мулюкова Ольга Николаевна  kod1c=6170
+6088  Калашник Наталия Павловна  kod1c=6171
+6089  Пешкова Лариса Владимировна  kod1c=6172
+6090  Комаров Александр Александрови  kod1c=6173
+5104  Неволько И. Н  kod1c=5186
+5184  Пыльнов И.А.  kod1c=5266
+5669  ТарКор-К  kod1c=5725
+5425  "Ставропольский базовый медици  kod1c=5480
+5630  Костенко Т.В.  kod1c=5686
+5510  СРО СКО ВДПО  kod1c=5565
+5909  Торгсервис 26  kod1c=5992
+5601  Никитин В.Н.*  kod1c=5657
+5419  Евсеев. О.В. (Международные пе  kod1c=5474
+5815  ГП АЙТИКОМ  kod1c=5898
+5759  Ибиев Шамил Асадуллаевич  kod1c=5842
+3165  Охрана МВД Изобильный  kod1c=3229
+2218  Эльдорадо  kod1c=2271
+329  Букреев А. В.  kod1c=356
+5411  Сапронов А.Н..  kod1c=5466
+5567  ЧечПродТорг...  kod1c=5623
+2979  Охрана Невинномысск  kod1c=3042
+4023  Охрана МВД Арзгир, Буденновск  kod1c=4094
+3327  Ставропольский региональный ре  kod1c=3394
+3177  Ставропольский региональный ре  kod1c=3241
+5612  ТАТАРСТАН  kod1c=5668
+3886  ЖКХ   Степновского района  kod1c=3955
+4331  Панченко И.И.  kod1c=4413
+4411  Ставропольстройопторг  kod1c=4492
+4424  Каруев Юрий Борисович  kod1c=4505
+4471  Даймекс  kod1c=4552
+3545  Энергосбыт Пятигорск  kod1c=3614
+544  Горэлектросеть Буденновск  kod1c=572
+8  Саленко Н.Н.  kod1c=4
+3707  РТК Л.Ставка  kod1c=3774
+590  РТК Изобильный  kod1c=619
+595  РТК Новоселицкое  kod1c=624
+592  РТК Курская  kod1c=621
+596  РТК Светлоград  kod1c=625
+1680  РТК Степное  kod1c=1723
+589  РТК Благодарный  kod1c=618
+1449  РТК Левокумское  kod1c=1490
+584  РТК Грачевка  kod1c=613
+586  РТК Нефтекумск  kod1c=615
+687  РТК Красногвардейское  kod1c=718
+2452  РТК Ипатово  kod1c=2511
+2458  РТК Шпаковское  kod1c=2517
+43  РТК Зеленокумск  kod1c=60
+587  РТК Новоалександровск  kod1c=616
+591  РТК Кочубеевское  kod1c=620
+593  РТК Невинномысск  kod1c=622
+594  РТК Новопавловск  kod1c=623
+583  РТК  Арзгир  kod1c=612
+585  РТК Дивное  kod1c=614
+45  СКЭ Степное  kod1c=65
+3957  Зайцев В. Г.  kod1c=4024
+4217  Нечипоренко Олег Михайлович  kod1c=4298
+598  РТК Донское  kod1c=627
+688  РТК Буденновск  kod1c=719
+588  РТК  Александровское  kod1c=617
+4003  Охрана МВД Левокумское  kod1c=4073
+633  Энергосбыт  Благодарненский уч  kod1c=662
+628  Энергосбыт  Невинномысский уч.  kod1c=657
+627  Энергосбыт  Иргаклы  kod1c=656
+3168  Охрана МВД Зеленокумск  kod1c=3232
+4679  Семенов Н.И.-такси  kod1c=4762
+4688  Централизованный региональный  kod1c=4771
+4879  Карайкозов АВ  kod1c=4962
+5155  Эко-Сити  kod1c=5237
+5252  Газпромбанк  kod1c=5334
+6156  Севрюков Иван Александрович  kod1c=6246
+6157  Крестьянинова О.Н.  kod1c=6247
+6158  Лотникова В.В.  kod1c=6248
+===================================================================
+Изменений в справочнике контрагентов НЕ ОБНАРУЖЕНО!
+Обновление справочника ДОВОГОВОР...
+Изменений в справочнике договоров НЕ ОБНАРУЖЕНО!

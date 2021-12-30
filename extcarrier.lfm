@@ -1,0 +1,8 @@
+object FormCar: TFormCar
+  Left = 721
+  Height = 240
+  Top = 415
+  Width = 320
+  Caption = 'FormCar'
+  LCLVersion = '0.9.31'
+end
